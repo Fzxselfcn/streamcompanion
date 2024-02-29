@@ -53,25 +53,18 @@
                 <!-- auto matic quality - default  -->
 
               </ion-select>
-              <!-- airplay -->
-              <ion-button *ngIf="this.iosDetected" (click)="openAirPlay(item.source)">
-                AirPlay
-                <ion-icon name="logo-apple"></ion-icon>
-              </ion-button>
-              <!-- chromecast -->
-              <ion-button *ngIf="cjs?.available" (click)="castVideo(item)">
-                <ion-icon [src]="'./assets/cast/cast_white.svg'"></ion-icon>
-                Chromecast
-              </ion-button>
-              <!-- <ion-button (click)="watchVideo(item)">Watch here</ion-button> -->
+              
+              
               <ion-button (click)="downloadVideo(item)">
                 <ion-icon name="download"></ion-icon>
-                Download
+                İndir
               </ion-button>
+			  
+			  
               <!-- popout chat -->
               <!-- <ion-button (click)="popoutChat(item)">Popout Chat</ion-button> -->
               <ion-button [href]="'https://kick.com/video/'+item.video.uuid" target="_blank">
-                Open in Kick
+                Kickte Aç
                 <ion-icon name="open"></ion-icon>
               </ion-button>
             </ion-card-content>

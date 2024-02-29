@@ -20,7 +20,7 @@ import { FooterComponent } from '../footer/footer.component';
 export class KickPage implements OnInit {
   // variables
   // featured variables
-  featuredStreamersListHardCoded = ['xqc'];
+  featuredStreamersListHardCoded = ['hype'];
   featuredStreamers: Kickinterface[] = [];
   nonFollowingVar: any[] = [];
 
@@ -60,7 +60,7 @@ export class KickPage implements OnInit {
       const data = await response.json();
       this.nonFollowingVar = data;
       // load only the first 3
-      for (const i of data.slice(0, 3)) {
+      for (const i of data.slice(0, 10)) {
         const profileData = (await this.kickService.getApi(i.channel_slug)) as Kickinterface;
         this.featuredStreamers.push(profileData);
         // remote the streamer from the nonFollowingVar

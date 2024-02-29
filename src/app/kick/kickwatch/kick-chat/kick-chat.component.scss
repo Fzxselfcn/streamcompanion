@@ -3,16 +3,17 @@
   height: 85vh; /* Set the chat container height to 70% of the viewport height */
   max-height: 100%; /* Ensure it doesn't exceed its parent's height */
   overflow-y: auto; /* Enable vertical scrolling */
-  // border: 1px solid #ccc; /* Optional border for visual distinction */
   padding: 10px; /* Optional padding for better aesthetics */
   overflow-x: hidden;
   background-color: #1e1e1e;
+  margin-bottom: 0 !important; /* Remove bottom margin */
 }
 
 /* Optional styling for chat messages */
 .chat-message {
   margin-bottom: 5px;
   color: #fff;
+  font-size: 16px; /* Büyütülmüş mesaj boyutu */
 }
 
 .overlay {
@@ -33,13 +34,13 @@
 }
 
 .single-chat-message {
-  // display: flex;
-  // align-items: center;
-  // padding top and bottom: 5px;
-  // write the code
   padding: 5px;
-  // gap: 10px;
-  background-color: #1e1e1e;
+  background-color: #1a1a1a; /* Daha koyu gri arka plan */
+  font-size: 18px; /* Büyütülmüş mesaj boyutu */
+}
+
+.single-chat-message:nth-child(odd) {
+  background-color: #121212; /* Daha koyu gri arka plan */
 }
 
 // global background color

@@ -79,7 +79,7 @@ export class KickwatchPage implements OnInit {
       this.updateUrl();
     } else {
       // this.url = 'https://corsproxy.io/?' + this.kickService.signalStreamer()?.playback_url;
-      this.kickService.streamUrl.set('https://corsproxy.io/?' + this.kickService.signalStreamer()?.playback_url);
+      this.kickService.streamUrl.set('https://proxy-jrcrz65weq-uc.a.run.app/' + this.kickService.signalStreamer()?.playback_url);
       // console.log(this.url);
       // console.log('updateSignal');
       // console.log(this.kickService.streamUrl());
@@ -95,7 +95,7 @@ export class KickwatchPage implements OnInit {
       // console.log("streamer found and set");
       if (streamer.livestream?.is_live == true) {
         // this.url = 'https://corsproxy.io/?' + streamer.playback_url;
-        this.kickService.streamUrl.set('https://corsproxy.io/?' + streamer.playback_url);
+        this.kickService.streamUrl.set('https://proxy-jrcrz65weq-uc.a.run.app/' + streamer.playback_url);
         // this.kickService.streamUrl.set(streamer.playback_url);
         // console.log("streamer is live");
         // console.log(this.url);

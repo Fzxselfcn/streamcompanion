@@ -172,7 +172,7 @@ export class VideoPlayerComponent implements OnInit {
     this.addButtonCommonFunction(
       '<ion-icon name="play-skip-forward-outline"></ion-icon><div>Forward</div>',
       'Fast Forward 5 seconds if possible',
-      () => this.player?.currentTime(this.player?.currentTime() + 5),
+      () => this.player?.currentTime(this.player?.currentTime() + 1),
       this.player?.controlBar.el().firstChild
     );
 
