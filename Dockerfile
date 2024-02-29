@@ -8,7 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install any needed packages specified in package.json
-RUN npm install
+RUN npm install -g @angular/cli
+
 
 # Copy the rest of the working directory contents into the container at /app
 COPY . .
@@ -17,4 +18,4 @@ COPY . .
 EXPOSE 8100
 
 # Run the app when the container launches
-CMD ["npm", "start"]
+CMD ["ionic", "serve"]
